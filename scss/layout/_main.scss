@@ -163,4 +163,69 @@
     }
 }
 
-.right-side {}
+.right-side {
+    margin-top: 40px;
+    .calendar {
+        box-shadow: 1px 2px 10px 2px #ccc;
+        background-color: #fff;
+        height: 246px;
+    }
+    .forum {
+        .number {
+            min-width: 7%;
+        }
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        .scroll {
+            content: '';
+            width: 10%;
+            min-height: 326px;
+            border-left: 2px red solid;
+            display: flex;
+        }
+        .forum_1 {
+            display: flex;
+            @extend .calendar;
+            height: 60px;
+            width: 90%;
+            margin-left: 10%;
+            .text {
+                padding-left: 6px;
+            }
+            .number {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                span {
+                    background-color: $mainClr;
+                    color: #fff;
+                    padding: 5px;
+                    &:nth-child(1) {
+                        border-bottom: 2px #fff solid;
+                    }
+                }
+            }
+        }
+        .forum_2 {
+            margin-top: 30px;
+            .number {
+                span {
+                    background-color: $plusColor !important;
+                    color: #fff;
+                    padding: 5px;
+                    &:nth-child(1) {
+                        border-bottom: 2px #fff solid;
+                    }
+                }
+            }
+        }
+        .forum_3 {
+            margin-top: 0px;
+            box-shadow: 1px 7px 12px 2px #ccc;
+        }
+        .forum_4 {
+            margin-top: 30px;
+        }
+    }
+}
