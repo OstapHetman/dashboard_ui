@@ -1,0 +1,10 @@
+@import '_variables';
+@import '_mixins';
+@import 'layout/_header';
+@import 'layout/_sidebar';
+@import '_media';
+// ======= STYLE =======
+body {
+    font-family: $bodyFont;
+    background-color: $bodyBg;
+}
