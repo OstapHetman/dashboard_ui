@@ -1,0 +1,69 @@
+.left-side {
+    margin-top: 40px;
+    .announcemnent {
+        box-shadow: 1px 2px 10px 2px #ccc;
+        background-color: #fff;
+        color: $textOnWhite;
+        .news-part {
+            border-top: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 10px;
+            .news-part-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: bold;
+                padding-left: 10px;
+                width: 70px;
+            }
+            .news-part-right {
+                line-height: 1.1em;
+                p:nth-child(1) {
+                    font-weight: 600;
+                    color: #000;
+                }
+                p:nth-child(2) {
+                    color: $textOnWhite;
+                }
+            }
+        }
+        .title {
+            display: flex;
+            justify-content: space-between;
+            min-height: 60px;
+            padding: 0px 15px;
+            h5 {
+                color: $titleOnWhite;
+                font-weight: bold;
+            }
+            small {
+                color: #03a9f4;
+            }
+        }
+        .gender {
+            display: flex;
+            align-items: center;
+            span:nth-child(1) {
+                border-left: 3px $activeBorder2 solid;
+                padding-left: 7px;
+                margin-right: 31px;
+            }
+            span:nth-child(2) {
+                border-left: 3px $activeBorder solid;
+                padding-left: 7px;
+            }
+        }
+    }
+    .messages {
+        background-color: red;
+        height: 100px
+    }
+    .courses {
+        background-color: green;
+        height: 100px;
+    }
+}
+
+.right-side {}

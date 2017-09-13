@@ -1,5 +1,6 @@
 @import '_variables';
 @import '_mixins';
+@import 'layout/_main';
 @import 'layout/_header';
 @import 'layout/_sidebar';
 @import '_media';
@@ -7,4 +8,18 @@
 body {
     font-family: $bodyFont;
     background-color: $bodyBg;
+    font-weight: 100;
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    .container-fluid {
+        padding-left: 0px;
+    }
+    .active {
+        border-left: 4px $activeBorder solid;
+    }
+    .active2 {
+        border-left: 4px $activeBorder2 solid;
+    }
 }
