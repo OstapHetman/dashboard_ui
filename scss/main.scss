@@ -22,4 +22,8 @@ body {
     .active2 {
         border-left: 4px $activeBorder2 solid;
     }
+    #main-section {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }

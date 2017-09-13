@@ -44,12 +44,86 @@
       .left-side .announcemnent .gender span:nth-child(2) {
         border-left: 3px #ffc107 solid;
         padding-left: 7px; }
-  .left-side .messages {
-    background-color: red;
-    height: 100px; }
-  .left-side .courses {
-    background-color: green;
-    height: 100px; }
+  .left-side #messages-courses {
+    margin-top: 35px; }
+    .left-side #messages-courses .head-message-corses {
+      background-color: #03a9f4;
+      color: #fff;
+      padding: 10px 15px; }
+      .left-side #messages-courses .head-message-corses h4 {
+        margin: 0;
+        padding: 0; }
+      .left-side #messages-courses .head-message-corses p {
+        padding: 0;
+        margin: 0; }
+      .left-side #messages-courses .head-message-corses .plus-circle {
+        width: 30px;
+        height: 30px;
+        background-color: #ffc107;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 5%;
+        top: 14%; }
+        .left-side #messages-courses .head-message-corses .plus-circle span {
+          font-size: 18px; }
+    .left-side #messages-courses .messages, .left-side #messages-courses .courses {
+      box-shadow: 1px 2px 10px 2px #ccc;
+      padding: 0;
+      background-color: #fff; }
+    .left-side #messages-courses .activeDanger {
+      border-left: 4px #ef5350 solid; }
+    .left-side #messages-courses .conversations {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      min-height: 66px;
+      line-height: 0.6em;
+      display: flex;
+      border-bottom: 1px #ccc solid; }
+      .left-side #messages-courses .conversations .vertical {
+        display: inline-block;
+        width: 15%;
+        height: 25px;
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+        .left-side #messages-courses .conversations .vertical span {
+          display: block;
+          transform: rotate(90deg);
+          color: #000;
+          position: absolute;
+          left: 45%;
+          font-size: 12px;
+          top: 14%; }
+      .left-side #messages-courses .conversations .yellow .progress-bar {
+        background-color: #ffc107; }
+      .left-side #messages-courses .conversations .mainClr .progress-bar {
+        background-color: #03a9f4; }
+      .left-side #messages-courses .conversations .dangerClr .progress-bar {
+        background-color: #ef5350; }
+      .left-side #messages-courses .conversations p:nth-child(1) {
+        font-weight: bold; }
+      .left-side #messages-courses .conversations p:nth-child(2) {
+        color: #727272; }
+      .left-side #messages-courses .conversations p:nth-child(3) {
+        color: #727272; }
+      .left-side #messages-courses .conversations div:nth-child(3) {
+        padding-left: 10px; }
+      .left-side #messages-courses .conversations small {
+        font-size: 10px;
+        opacity: 0.6; }
+      .left-side #messages-courses .conversations .circleActive, .left-side #messages-courses .conversations .circleDesactive {
+        width: 10px;
+        height: 10px;
+        background-color: #cddc39;
+        position: relative;
+        left: 4%;
+        border-radius: 50%; }
+      .left-side #messages-courses .conversations .circleDesactive {
+        background-color: #f4511e; }
 
 #sidebar .header {
   background-color: #0288d1;
@@ -68,7 +142,7 @@
 
 #sidebar .sidebar {
   background-color: #03a9f4;
-  min-height: 100vh;
+  height: 100vh;
   padding-right: 0px; }
 #sidebar .ava {
   color: #fff;
@@ -114,5 +188,8 @@ body {
     border-left: 4px #ffc107 solid; }
   body .active2 {
     border-left: 4px #03a9f4 solid; }
+  body #main-section {
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 /*# sourceMappingURL=main.css.map */
